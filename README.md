@@ -20,8 +20,8 @@ There is some issues that one could face when using Colima to work with Docker (
 ```
 $ docker context use colima
 
-export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
-export DOCKER_HOST="unix://${HOME}/.colima/docker.sock"
+$ export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
+$ export DOCKER_HOST="unix://${HOME}/.colima/docker.sock"
 
 ```
 
