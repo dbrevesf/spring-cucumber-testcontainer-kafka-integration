@@ -7,11 +7,14 @@
 - Java 11.0.15.9.1-amzn
 - JUnit 5
 - SpringBoot 2.7.2
-- Cucumber 7.0
+- Cucumber 7.4.1
+- TestContainer 1.17.3
+- Kafka 6.2.1
+- Mongo 4.0.10
 - Colima 0.4.4
 - Docker 20.01.17
-- Mongo 4.0.10
-- Kafka 6.2.1
+
+
 
 ## Docker and Colima Issues
 
