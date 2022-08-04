@@ -29,6 +29,19 @@ dependencies {
     testImplementation 'io.cucumber:cucumber-spring:7.4.1'
 }
 
-tasks.named('test') {
-    useJUnitPlatform()
+configurations {
+    cucumberRuntime {
+        extendsFrom testImplementation
+    }
+}
+
+task cucumber() {
+    dependsOn assemble, testClasses
+    doLast {
+        javaexec {
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = ['--plugin', 'pretty', '--glue', 'com.example.demo.bdd', 'src/test/resources']
+        }
+    }
 }
