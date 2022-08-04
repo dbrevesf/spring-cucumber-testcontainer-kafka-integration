@@ -18,7 +18,7 @@
 
 ## Docker and Colima Issues
 
-There are some issues that one can face when using Colima to work with Docker (usually MacOS users). If that's the case, the following command should be executed and the environment variables should be set (the lines below can also be put within the configuration file of the terminal (`.bashrc`, `.zshrc`, `.profile`, etc):
+There are some issues that one can face when using Colima to work with Docker (usually MacOS users). If that's the case, the following command should be executed and the environment variables should be set. The lines below can also be put within the configuration file of the terminal (`.bashrc`, `.zshrc`, `.profile`, etc):
 
 ```
 $ docker context use colima
