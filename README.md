@@ -18,7 +18,7 @@
 
 ## Docker and Colima Issues
 
-There is some issues that one could face when using Colima to work with Docker (usually MacOS users). If that's the case, the following command should be executed and the environment variables should be set (you can put the both `export...` lines within your configuration file of your terminal (`.bashrc`, `.zshrc`, `.profile`, etc):
+There are some issues that one can face when using Colima to work with Docker (usually MacOS users). If that's the case, the following command should be executed and the environment variables should be set. The lines below can also be put within the configuration file of the terminal (`.bashrc`, `.zshrc`, `.profile`, etc):
 
 ```
 $ docker context use colima
@@ -28,7 +28,26 @@ $ export DOCKER_HOST="unix://${HOME}/.colima/docker.sock"
 
 ```
 
-It is required because when we use Colima the `docker.sock` is not being placed at the usual directory `/var/run` so, we need to execute the previous commands so the `TestContainer` can be run properly.
+It is required because when Colima is running, the `docker.sock` is not being placed at the usual directory `/var/run` so, the previous commands must be executed an then `TestContainer` runs properly.
+
+## Tutorial
+
+1) Create a Spring Boot Application
+...
+2) Create a Cucumber Test
+...
+3) Create TestContainers setup classes (TestContainer, Kafka and Mongo)
+...
+4) Update Steps
+...
+
+
+## References
+
+- https://cucumber.io/docs/cucumber/
+- https://www.testcontainers.org/
+- https://www.baeldung.com/spring-boot-kafka-testing
+- https://datmt.com/backend/java/javaee/setup-cucumber-testcontainers-junit5-in-spring-boot-project/
 
 
 
