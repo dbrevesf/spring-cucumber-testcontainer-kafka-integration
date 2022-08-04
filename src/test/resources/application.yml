@@ -1,9 +1,8 @@
 spring:
   kafka:
-    container-image: confluentinc/cp-kafka:6.2.1
     consumer:
       auto-offset-reset: earliest
-      group-id: tw-exxon-test
+      group-id: test-group-id
     producer:
       bootstrap-servers: localhost:9092
 test:

@@ -6,7 +6,6 @@ import org.springframework.context.annotation.Import;
 import org.springframework.test.annotation.DirtiesContext;
 import org.testcontainers.junit.jupiter.Testcontainers;
 
-
 @Import({KafkaContainerSetup.class,
         MongoContainerSetup.class})
 @DirtiesContext
