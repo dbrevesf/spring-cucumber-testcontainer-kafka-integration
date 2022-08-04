@@ -74,7 +74,7 @@ This tutorial considers that all the dependencies are allready installed (JDK, G
       }
     ```
     
-    5. Create a main class called KafkaProducerConsumerApplication located on: `src/main/java/com/example/demo/`. And create a main method with the Spring initialization. See this file [here](https://github.com/dbrevesf/spring-cucumber-testcontainer-kafka-integration/blob/main/src/main/java/com/example/demo/KafkaProducerConsumerApplication.java). 
+    5. Create a main class called KafkaProducerConsumerApplication located on `src/main/java/com/example/demo/` and create a main method with the Spring initialization. See this file [here](https://github.com/dbrevesf/spring-cucumber-testcontainer-kafka-integration/blob/main/src/main/java/com/example/demo/KafkaProducerConsumerApplication.java). 
     
     6. Now that the basic project is setup, build the project: `./gradlew build`.
 
@@ -99,7 +99,7 @@ This tutorial considers that all the dependencies are allready installed (JDK, G
 
     2. Create a class called `MongoContainerSetup` within the directory `src/test/java/com/example/demo/mongo/config/` with the following [content](https://github.com/dbrevesf/spring-cucumber-testcontainer-kafka-integration/blob/main/src/test/java/com/example/demo/mongo/config/MongoContainerSetup.java).
 
-    3. Create a class called `TestContainerSetup` within the directory `src/test/java/com/example/demo/testcontainer/config/` with the following [content] (https://github.com/dbrevesf/spring-cucumber-testcontainer-kafka-integration/blob/main/src/test/java/com/example/demo/testcontainer/config/TestContainerSetup.java).
+    3. Create a class called `TestContainerSetup` within the directory `src/test/java/com/example/demo/testcontainer/config/` with the following [content](https://github.com/dbrevesf/spring-cucumber-testcontainer-kafka-integration/blob/main/src/test/java/com/example/demo/testcontainer/config/TestContainerSetup.java).
 
     4. Create a class called `CucumberConfig` within the directory `src/test/java/com/example/demo/bdd/config/` with the following [content](https://github.com/dbrevesf/spring-cucumber-testcontainer-kafka-integration/blob/main/src/test/java/com/example/demo/bdd/config/CucumberConfig.java).
 
