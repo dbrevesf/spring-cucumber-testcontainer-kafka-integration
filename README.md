@@ -30,6 +30,25 @@ $ export DOCKER_HOST="unix://${HOME}/.colima/docker.sock"
 
 It is required because when we use Colima the `docker.sock` is not being placed at the usual directory `/var/run` so, we need to execute the previous commands so the `TestContainer` can be run properly.
 
+## Tutorial
+
+1) Create a Spring Boot Application
+...
+2) Create a Cucumber Test
+...
+3) Create TestContainers setup classes (TestContainer, Kafka and Mongo)
+...
+4) Update Steps
+...
+
+
+## References
+
+- https://cucumber.io/docs/cucumber/
+- https://www.testcontainers.org/
+- https://www.baeldung.com/spring-boot-kafka-testing
+- https://datmt.com/backend/java/javaee/setup-cucumber-testcontainers-junit5-in-spring-boot-project/
+
 
 
 
