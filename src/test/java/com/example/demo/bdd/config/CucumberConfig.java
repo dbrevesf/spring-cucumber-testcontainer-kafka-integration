@@ -1,7 +1,7 @@
 package com.example.demo.bdd.config;
 
 
-import com.example.demo.testcontainers.TestContainerSetup;
+import com.example.demo.testcontainer.config.TestContainerSetup;
 import io.cucumber.junit.CucumberOptions;
 import io.cucumber.spring.CucumberContextConfiguration;
 import org.junit.jupiter.api.extension.ExtendWith;

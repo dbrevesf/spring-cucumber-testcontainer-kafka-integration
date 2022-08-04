@@ -1,4 +1,4 @@
-package com.example.demo.bdd;
+package com.example.demo.bdd.steps;
 
 import com.example.demo.kafka.KafkaConsumerForTest;
 import com.example.demo.kafka.KafkaProducerForTest;
