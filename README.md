@@ -18,7 +18,7 @@
 
 ## Docker and Colima Issues
 
-There is some issues that one could face when using Colima to work with Docker (usually MacOS users). If that's the case, the following command should be executed and the environment variables should be set (you can put the both `export...` lines within your configuration file of your terminal (`.bashrc`, `.zshrc`, `.profile`, etc):
+There are some issues that one can face when using Colima to work with Docker (usually MacOS users). If that's the case, the following command should be executed and the environment variables should be set (the lines below can also be put within the configuration file of the terminal (`.bashrc`, `.zshrc`, `.profile`, etc):
 
 ```
 $ docker context use colima
@@ -28,7 +28,7 @@ $ export DOCKER_HOST="unix://${HOME}/.colima/docker.sock"
 
 ```
 
-It is required because when we use Colima the `docker.sock` is not being placed at the usual directory `/var/run` so, we need to execute the previous commands so the `TestContainer` can be run properly.
+It is required because when Colima is running, the `docker.sock` is not being placed at the usual directory `/var/run` so, the previous commands must be executed an then `TestContainer` runs properly.
 
 ## Tutorial
 
